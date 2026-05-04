@@ -1,1 +1,1 @@
-# cypherpunkinstitute.github.io
+# Cypherpunk Institute
