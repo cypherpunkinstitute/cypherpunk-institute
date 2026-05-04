@@ -1,0 +1,390 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@import url('/fonts/fontawesome-free-6.6.0-web/css/all.min.css');
+@import url('/fonts/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap');
+
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #ffdd00;
+  --ifm-color-primary-dark: #ffdd00;
+  --ifm-color-primary-darker: #ffdd00;
+  --ifm-color-primary-darkest: #ffdd00;
+  --ifm-color-primary-light: #ffdd00;
+  --ifm-color-primary-lighter: #ffdd00;
+  --ifm-color-primary-lightest: #ffdd00;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #ffdd00;
+  --ifm-color-primary-dark: #ffdd00;
+  --ifm-color-primary-darker: #ffdd00;
+  --ifm-color-primary-darkest: #ffdd00;
+  --ifm-color-primary-light: #ffdd00;
+  --ifm-color-primary-lighter: #ffdd00;
+  --ifm-color-primary-lightest: #ffdd00;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/*<==========================================================>*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body p {
+    text-align: justify;
+}
+
+code {
+  background-color: #161616;
+  border: 1px solid #404040;
+  transition: all .2s;
+}
+
+.codeBlockContent_QJqH:hover code {
+    border-color: #ffdd00;
+    color: #ffdd00;
+    transition: all .2s;
+}
+
+.buttonGroup_M5ko .clean-btn {
+    background-color: #161616;
+}
+
+.codeBlockContent_biex pre code{
+  background-color: #252525;
+}
+
+.pagination-nav__link {
+    background-color: #161616;
+    border-color: #404040;
+}
+
+.pagination-nav__link:hover {
+    background-color: #161616;
+    border-color: #ffdd00;
+}
+
+/*<===============> HEADER <===============>*/
+
+.navbar {
+    /*flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 12px 16px;*/
+
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  z-index: -1;
+}
+
+/*.navbar__inner {
+  flex-direction: column;
+  align-items: flex-start;
+}*/
+
+.navbar__items {
+    /*margin-top: 8px;
+    width: 100%;*/
+
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+/*.navbar__items > a{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+}*/
+
+/*Logo*/
+.navbar__logo{
+    height: 36px;
+    width: auto;
+}
+
+/*Botón donacioens*/
+.navbar__items > a:nth-child(1) {
+    text-decoration: none;
+    font-weight: bold;
+    color:#000000 !important;
+    padding: 2px 6px 2px 6px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color:#ffdd00;
+    border: 2px solid;
+    border-color: #ffdd00;
+    transition: all .2s;
+}
+
+.navbar__items > a:nth-child(1):hover{
+    color: #ffdd00 !important;
+    background-color: #00000000;
+    transition: all .2s;
+}
+
+
+/*<===============> APP CONTAINER <===============>*/
+
+.app-container {
+    display: block;
+    height: max-content;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #161616;
+    transition: all .2s;
+}
+
+.app-container:hover a {
+    color: #ffdd00;
+    transition: all .2s;
+}
+
+.app-container:hover  {
+    border-color: #ffdd00;
+    transition: all .2s;
+}
+
+.icon-title-tags-container {
+    display: flex;
+}
+
+/* Icono aplicacion */
+.app-icon-container {
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}
+
+.app-icon-container img{
+    height: auto;
+    width: 80px;
+    border-radius: 4px;
+}
+
+/* Contenerdor título y etiquetas */
+.title-tags-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dos enlaces en Fedora */
+.varios-enlaces{
+    display: flex;
+}
+
+.separador{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* Titulo */
+.title-tags-container a{
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* Etiquetas Linux, Windwos, Mac, Android, IOS */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #404040;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 15px;
+    margin: 5px;
+    transition: all .2s;
+}
+
+.tag:hover {
+    border-color: #ffdd00;
+    color: #ffdd00;
+    cursor: default;
+    transition: all .2s;
+}
+
+.tag img{
+    height: 20px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.tag i{
+    margin-right: 5px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-foss {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #16c000;
+    color: #16c000;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 15px;
+    margin: 5px;
+    transition: all .2s;
+}
+
+/*<===============> SIDEBAR <===============>*/
+
+/*Fondo sidebar*/
+.menu{
+    border-right: 1px solid #202020;
+    border-bottom: 1px solid #202020;
+    border-top: 1px solid #202020;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  z-index: -1;
+}
+
+.menu__list li {
+  padding: 2px 0px 2px 0px;
+}
+
+.menu__link {
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.menu__link:hover:not(.menu__list-item-collapsible .menu__link) {
+  /*border: 1px solid #ffdd00;
+  background-color: #ffdd0040;*/
+  color: #ffdd00;
+  transition: .1s;
+}
+
+.menu__link:hover {
+  color: #ffdd00;
+  transition: .1s;
+}
+
+.menu__link--active:not(.menu__list-item-collapsible a) {
+  /*border: 1px solid #ffdd00;
+  background-color: #ffdd0040;*/
+  color: #ffdd00;
+  transition: .1s;
+}
+
+.menu__list-item-collapsible {
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.menu__list-item-collapsible--active {
+    /*border: 1px solid #ffdd00;
+    background-color: #ffdd0040;*/
+    color: #ffdd00;
+    transition: .1s;
+}
+
+.menu__list-item-collapsible:hover{
+    /*border: 1px solid #ffdd00;
+    background-color: #ffdd0040;*/
+    color: #ffdd00;
+    transition: .1s;
+}
+
+.menu__list-item-collapsible:hover a{
+    color: #ffdd00;
+    transition: .1s;
+}
+
+.menu__list-item-collapsible:hover .menu__caret:before {
+    color: #ffdd00;
+}
+
+.navbar-sidebar__back {
+    color: #ddd;
+}
+
+/*<===============> FOOTER <===============>*/
+
+.footer {
+    background-color: #000000;
+    text-decoration: none;
+}
+
+/*<===============> PÁGINA DONACIONES <===============>*/
+
+.qr {
+    border-radius: 8px;
+}
+
+/*<===============> BARRA DE SCROLL <===============>*/
+
+::-webkit-scrollbar{
+	width: 8px;
+}
+
+/*definimos el color de fondo de de la barra de scroll */
+::-webkit-scrollbar-track {
+  background:#000000;
+}
+
+/*personalizamos el scroll*/
+::-webkit-scrollbar-thumb{
+border-radius: 10px;
+background: #fd0;
+}
+
+/*<===============> SELECCION DEL CURSOR <===============>*/
+
+/* Personalizar el color de selección del cursor */
+::selection {
+    background-color: #ffdd00; /* Cambia el color de fondo de la selección */
+    color: #000000; /* Cambia el color del texto seleccionado */
+}
+
+/* Personalizar el color de selección del cursor en navegadores antiguos */
+::-moz-selection {
+    background-color: #ffdd00;
+    color: #000000;
+}
