@@ -85,10 +85,10 @@ code {
     height: auto;
     padding: 12px 16px;*/
 
-    background: rgba(0, 0, 0, 0.7);
+    background: rgb(0, 0, 0);
 }
 
-.navbar::before {
+/*.navbar::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -97,7 +97,7 @@ code {
   -webkit-backdrop-filter: blur(12px);
 
   z-index: -1;
-}
+}*/
 
 /*.navbar__inner {
   flex-direction: column;
@@ -267,13 +267,14 @@ code {
 
 /*Fondo sidebar*/
 .menu{
-    border-right: 1px solid #202020;
+    /*border-right: 1px solid #202020;
     border-bottom: 1px solid #202020;
     border-top: 1px solid #202020;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgb(0, 0, 0);*/
+    background-color: #000000;
 }
 
-.menu::before {
+/*.menu::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -282,7 +283,7 @@ code {
   -webkit-backdrop-filter: blur(12px);
 
   z-index: -1;
-}
+}*/
 
 .menu__list li {
   padding: 2px 0px 2px 0px;
