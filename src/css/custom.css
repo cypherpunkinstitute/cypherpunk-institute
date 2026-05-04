@@ -125,8 +125,16 @@ code {
     width: auto;
 }
 
+.navbar__item svg {
+    font-size: 18px;
+}
+
 /*Botón donacioens*/
-.navbar__items > a:nth-child(1) {
+.navbar__item .fa-heart {
+    color: #ff4d6d !important;
+}
+
+/*.navbar__items > a:nth-child(1) {
     text-decoration: none;
     font-weight: bold;
     color:#000000 !important;
@@ -137,14 +145,89 @@ code {
     border: 2px solid;
     border-color: #ffdd00;
     transition: all .2s;
-}
+}*/
 
-.navbar__items > a:nth-child(1):hover{
+/*.navbar__items > a:nth-child(1):hover{
     color: #ffdd00 !important;
     background-color: #00000000;
     transition: all .2s;
+}*/
+
+/*<======> Search <======>*/
+.aa-DetachedSearchButton {
+    border: 0px !important;
+    /*border-bottom: 1px solid #cecece !important;
+    border-radius: 0px !important;*/
+    color: #cecece !important;
+    font-size: 16px !important;
+    padding: 0;
 }
 
+.aa-DetachedSearchButton:hover {
+    border: 0px !important;
+    /*border-bottom: 1px solid #ffdd00 !important;
+    border-radius: 0px !important;*/
+    color: #cecece !important;
+}
+
+.aa-DetachedSearchButton:hover .aa-SubmitIcon {
+    fill: #ffdd00;
+    width: 18px !important;
+}
+
+.aa-SubmitIcon {
+    fill: #cecece;
+    width: 18px !important;
+}
+
+.aa-DetachedOverlay {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.aa-DetachedFormContainer {
+    background-color: #000000 !important;
+}
+
+
+.aa-Form {
+    border: 1px solid #ffdd00 !important;
+}
+
+.aa-Form svg {
+    fill: #ffdd00;
+}
+
+.aa-Input::placeholder {
+  color: #ddd !important;
+}
+
+.aa-ClearIcon {
+    fill: #ddd;
+}
+
+.aa-Panel {
+    background-color: #000000 !important;
+}
+
+.aa-Item {
+    background-color: black !important;
+}
+
+.aa-Item:hover  {
+    color: #fd0 !important;
+}
+
+.aa-Item svg {
+    fill: #ffdd00;
+}
+
+.aa-GradientBottom {
+    display: none;
+}
+
+mark {
+    background-color: #ffdd00;
+}
 
 /*<===============> APP CONTAINER <===============>*/
 

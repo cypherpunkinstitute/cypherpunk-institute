@@ -78,12 +78,25 @@ const config: Config = {
         sidebarPath: require.resolve('./sidebars.ts'),
       },
     ],
+    [
+      '@cmfcmf/docusaurus-search-local',
+      {
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+        language: "es",
+        maxSearchResults: 8,
+        style: undefined,
+      },
+    ],
   ],
 
   scripts: [
     {
       src: '/js/sortTable.js',
       async: true,
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js',
+      defer: true,
     },
   ],
 
@@ -112,10 +125,14 @@ const config: Config = {
         {to: '/privacyTools/intro', label: 'Privacy Tools', position: 'left'},
         {to: '/literatura', label: 'Literatura', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/donaciones', label: 'Donaciones', position: 'right'},
         {
-          href: 'https://github.com/jose-prk',
-          label: 'GitHub',
+          type: 'search',
+          position: 'right',
+        },
+        {to: '/donaciones', html: '<i class="fa-solid fa-heart"></i>', position: 'right',},
+        {
+          href: 'https://github.com/cypherpunkinstitute/cypherpunk-institute',
+          html: '<i class="fa-brands fa-github"></i>',
           position: 'right',
         },
       ],
